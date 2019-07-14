@@ -1,0 +1,11 @@
+1- Problèmes
+
+   -Chaque processus qui calcule un c_i_j doit accéder à la matrice en mémoire partagée
+   -Initialisation de la matrice
+   -Le stockage du résultat de chaque processus après traitement
+
+2- Solutions
+
+   -En utilisant une mémoire partagée, on va permettre au lanceur de lire les indices i,j de chaque processus
+   -En utilisant un fichier, on écrire la matrice dans le fichier; le lanceur lit le contenu avec la mémoire partagée.
+   -Chaque processus met son résultat dans une troisième mémoire partagée que seul le lanceur pourra lire.

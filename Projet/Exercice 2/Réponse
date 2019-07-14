@@ -1,0 +1,7 @@
+
+1- La valeur finale est 300
+
+2- Résolution du problème
+
+Pour résoudre le problème, il faut créer une mémoire partagée à laquelle un seul des trois processus a accès à la fois. Le processus en cours va donc bloquer la 
+mémoire partagée à l'aide du semaphore et la débloquer une fois le traitement terminé. 

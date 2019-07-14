@@ -1,0 +1,22 @@
+1- Problèmes à résoudre
+    Au niveau du client
+       - Le choix manuel du fichier à envoyer;
+       - L'envoi du nom du fichier à envoyer;
+       - L'envoi du contenu du fichier;
+
+    Au niveau du serveur
+
+       - La création du fichier à patir du nom envoyé;
+       - Le remplissage du fichier avec les données envoyés depuis le client;
+
+2- Méthode de résolution
+
+    Au niveau du client 
+        - Le nom du fichier est donné en argument lors de la connexion au serveur
+        - Le nom du fichier pris en argument est envoyé au serveur avec la fontion send()
+        - Le client ouvre le fichier, puis y lit un certains nombre de caractères qu'il envoie à chaque fois jusqu'à ce qu'il atteigne la fin du fichier
+
+    Au niveau du serveur
+        - Le serveur reçois d'abord le fichier et le crée gâce à fopen() en mode lecture;
+        - Le serveur lit les données à écrire dans le fichier et les écrits tant qu'il y en a qui ont été envoyés;
+
